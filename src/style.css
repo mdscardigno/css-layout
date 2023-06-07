@@ -22,4 +22,36 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex; /*display flex only applies to the li's and not to the images*/
+  /* flex-direction: column-reverse; */
+  /*wrap says: if you get to the edge and there is no more space, go to the next line*/
+  flex-wrap: wrap; /*to contain the elements being flexed*/
+  flex-direction: column;
+  /*justify-content: center; centers the items along the main axis*/
+  /*justify-content: space-around; space-around: space between the items space does not collapse as with margin*/
+  /*justify-content: space-between; space-between: space between the items space does not collapse as with margin. for navs*/
+  justify-content: space-evenly; /*space-evenly: space between the items space does not collapse as with margin*/
+  /*flex-flow: column wrap; shorthand for flex-direction and flex-wrap*/
+  align-items: flex-start; /*align-items: flex-end; aligns the items along the cross axis*/
 }
+/* li.A,
+li.E {
+  padding-left: 1rem;
+  padding-right: 8rem;
+  background-color: var(--asphalt);
+} */
+/*B sees itself as the first item in the normal flow*/
+/* li:first-child { */
+/* display: inline; */
+/* float: right;
+  margin: 0;
+  padding: 0;
+} */
+
+/*Inline elements by default have their vertical-align set to
+this leaves a little space bellow all the images, this removes 
+https://stackoverflow.com/questions/5804256/image-inside-div-has-extra-space-below-the-image/34952703#34952703*/
+img {
+  vertical-align: bottom;
+}
+/*grid is meant for two dimensional layouts, flexbox is meant for one dimensional layouts*/
