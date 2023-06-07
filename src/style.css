@@ -16,6 +16,7 @@ body {
   margin: 0;
   min-height: 100%;
 }
+
 ul {
   height: 100vh;
   background-color: var(--sand);
@@ -26,14 +27,40 @@ ul {
   /* flex-direction: column-reverse; */
   /*wrap says: if you get to the edge and there is no more space, go to the next line*/
   flex-wrap: wrap; /*to contain the elements being flexed*/
-  flex-direction: column;
+  /*flex-direction: column;*/
   /*justify-content: center; centers the items along the main axis*/
   /*justify-content: space-around; space-around: space between the items space does not collapse as with margin*/
   /*justify-content: space-between; space-between: space between the items space does not collapse as with margin. for navs*/
-  justify-content: space-evenly; /*space-evenly: space between the items space does not collapse as with margin*/
+  /*justify-content: space-evenly; space-evenly: space between the items space does not collapse as with margin*/
   /*flex-flow: column wrap; shorthand for flex-direction and flex-wrap*/
-  align-items: flex-start; /*align-items: flex-end; aligns the items along the cross axis*/
+  /*align-items: flex-start; align-items: flex-end; aligns the items along the cross axis*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
 }
+/* li.A {
+  order: 1;
+}
+li.B {
+  order: 2;
+} */
+/* li {
+  flex: 1;
+}
+li.C {
+  flex: 2;
+} */
+/* li.D {
+  order: 4;
+}
+li.E {
+  order: 5;
+}
+li.F {
+  order: 6;
+}
+li.G {
+  order: -1;
+} */
 /* li.A,
 li.E {
   padding-left: 1rem;
@@ -47,7 +74,16 @@ li.E {
   margin: 0;
   padding: 0;
 } */
-
+main {
+  display: flex;
+}
+main div {
+  flex: 1;
+}
+main .important {
+  color: var(--tangerine);
+  flex: 1;
+}
 /*Inline elements by default have their vertical-align set to
 this leaves a little space bellow all the images, this removes 
 https://stackoverflow.com/questions/5804256/image-inside-div-has-extra-space-below-the-image/34952703#34952703*/
