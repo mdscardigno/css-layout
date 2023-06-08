@@ -16,13 +16,15 @@ body {
   margin: 0;
   min-height: 100%;
 }
-
 ul {
-  height: 100vh;
-  background-color: var(--sand);
   list-style-type: none;
   margin: 0;
   padding: 0;
+  height: 100vh;
+  background-color: var(--sand);
+}
+
+ul.flexbox {
   display: flex; /*display flex only applies to the li's and not to the images*/
   /* flex-direction: column-reverse; */
   /*wrap says: if you get to the edge and there is no more space, go to the next line*/
