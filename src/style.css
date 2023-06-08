@@ -55,11 +55,34 @@ ul.grid {
   grid-template-areas:
     'header header header sidebar'
     'main main main sidebar'
-    '. footer footer sidebar';
+    '.   footer footer sidebar';
 }
 li {
   border: 8px solid black;
 }
+/* main {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--sand);
+}
+header {
+  grid-area: header;
+  background-color: var(--asphalt);
+  color: var(--lime);
+  padding: 1rem;
+}
+aside {
+  grid-area: sidebar;
+  background-color: var(--sand);
+  color: var(--tangerine);
+  padding: 1rem;
+}
+footer {
+  grid-area: footer;
+  background-color: var(--asphalt);
+  color: var(--lime);
+  padding: 1rem;
+} */
 .A {
   grid-area: header;
 }
